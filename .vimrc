@@ -1,6 +1,6 @@
 if !exists("g:syntax_on")
     syntax enable
-endif
+end
 
 colorscheme afterglow
 set relativenumber
@@ -12,10 +12,10 @@ set shiftwidth=4
 set expandtab
 set autoindent
 
-" highlights stuff past 80 columns
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+" highlights the 81st column
+highlight ColorColumn ctermbg=235
+set colorcolumn=81
 
 " highlights trailing whitespace
-highlight ExtraWhitespace ctermbg=12 guibg=white
-2match ExtraWhitespace /\s\+\%#\@<!$/
+highlight ExtraWhitespace ctermbg=12
+match ExtraWhitespace /\s\+\%#\@<!$/
