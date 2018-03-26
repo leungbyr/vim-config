@@ -1,6 +1,6 @@
 if !exists("g:syntax_on")
     syntax enable
-end
+endif
 
 colorscheme afterglow
 set relativenumber
