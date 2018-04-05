@@ -12,10 +12,10 @@ set shiftwidth=4
 set expandtab
 set autoindent
 
-" highlights the 81st column
-highlight ColorColumn ctermbg=235
-set colorcolumn=81
+" highlights stuff past 80 columns
+highlight OverLength ctermbg=red
+match OverLength /\%81v.\+/
 
 " highlights trailing whitespace
 highlight ExtraWhitespace ctermbg=12
-match ExtraWhitespace /\s\+\%#\@<!$/
+2match ExtraWhitespace /\s\+\%#\@<!$/
